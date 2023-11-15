@@ -1,9 +1,12 @@
-var num = 895
-var resto = num % 2
+function calcularParImpar() {
+    var txtnum = window.document.getElementById('txtnumero')
+    var num =Number(txtnum.value)
+    var res = window.document.getElementById('res')
+    var resto = (num % 2)
 
-console.log(`O resto da divisão é ${resto}`)
-if (resto != 0){
-    console.log(`Número é ímpar`)
-}else{
-    console.log(`O número é par`)
+    if ((resto !== 0)) {
+    res.innerHTML = `<p>O número ${num} é Ímpar.</p>`
+    } else {
+    res.innerHTML = `<p>O número ${num} é Par.</p>`
+    }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programa que avalia se número é par ou ímpar</title>
+    <script type="text/javascript" src="parimpar.js"></script>
 </head>
 <body>
     <h1>Avalia se é par ou ímpar em JavaScript</h1>
@@ -14,20 +15,5 @@
     <input type="button" value="Verificar se é par ou ímpar" onclick="calcularParImpar()">
     <div id="res">
     </div>
- 
-    <script>
-        function calcularParImpar() {
-            var txtnum = window.document.getElementById('txtnumero')
-            var num =Number(txtnum.value)
-            var res = window.document.getElementById('res')
-            var resto = (num % 2)
-
-            if ((resto !== 0)) {
-            res.innerHTML = `<p>O número ${num} é Ímpar.</p>`
-            } else {
-            res.innerHTML = `<p>O número ${num} é Par.</p>`
-            }
-        }
-    </script>
 </body>
 </html>
